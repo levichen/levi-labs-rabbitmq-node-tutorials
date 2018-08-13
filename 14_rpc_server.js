@@ -25,7 +25,7 @@ async function main () {
 
       // send the result to callback queue
       console.log(` [.] Finished execution send the result to callback queue`)
-      await channel.sendToQueue(msg.properties.replyTo, Buffer.from(result.toString()), {correlationId: msg.properties.correlationId})
+      await channel.sendToQueue(msg.properties.replyTo, Buffer.from(result.toString()), { correlationId: msg.properties.correlationId })
       // ack this message
       console.log(` [.] Finished send to callback queue, ack this message in ${queue}`)
       await channel.ack(msg)
