@@ -17,7 +17,7 @@ async function main () {
     const channel = await connection.createChannel()
 
     // declare a direct exchange
-    channel.assertExchange(exchange, 'direct', {durable: false})
+    channel.assertExchange(exchange, 'direct', { durable: false })
     // send a message to direct exchange
     channel.publish(exchange, severity, Buffer.from(JSON.stringify(msg)))
 
