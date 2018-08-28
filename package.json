@@ -1,5 +1,5 @@
 {
-  "name": "node-rabbitmq",
+  "name": "levi-labs-rabbitmq-node-tutorials",
   "version": "1.0.0",
   "description": "",
   "main": "emit_log.js",
